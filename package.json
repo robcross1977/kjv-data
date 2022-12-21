@@ -1,11 +1,12 @@
 {
   "name": "@robcross1977/kjv-data",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A library for searching through the King James Version of the bible and returning the corresponding books/chapters and verses",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "commonjs",
   "scripts": {
-    "generate": "rm ./data/kjv.db && ts-node ./src/generate"
+    "generate": "rm ./data/kjv.db && ts-node ./src/generate",
+    "pub": "tsc && npm publish --access public"
   },
   "keywords": [],
   "author": "Robert Crossland",
